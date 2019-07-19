@@ -1,0 +1,84 @@
+.title {
+  text-align: center;
+}
+
+.page {
+  display: flex;
+}
+
+.home {
+  margin-left: 2%;
+}
+
+.button {
+  background: lightgray;
+  border: 1px solid grey;
+  margin: 2%;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  background: gray;
+}
+
+li {
+  opacity: 0.8;
+  transition: 0.5s;
+  margin: 5%;
+}
+
+li:hover {
+  list-style: none;
+  cursor: pointer;
+  border: 1px solid black;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+li:nth-child(even) {
+  background: lightcyan;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background: lightgrey;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background: lightcyan;
+}
+ 
+@media screen and (max-width: 600px) {
+  .page {
+    display: block;
+  }
+  .list {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .detail {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .list {
+    width: 25%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .detail {
+    width: 60%;
+  }
+}
